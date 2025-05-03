@@ -58,9 +58,10 @@ export default function About() {
               shadow="lg"
             >
               <Image
-                src="https://images.unsplash.com/photo-1548625149-fc4a29cf7092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                src="https://images.unsplash.com/photo-1555696958-c5049b866f6f?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Church building"
                 objectFit="cover"
+                objectPosition="top"
                 w="full"
                 h="full"
               />
@@ -113,7 +114,7 @@ export default function About() {
                   shadow="md"
                 >
                   <Image
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="New building rendering"
                     objectFit="cover"
                     w="full"
@@ -139,7 +140,7 @@ export default function About() {
                   shadow="md"
                 >
                   <Image
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    src="https://images.unsplash.com/photo-1713373073923-9982c421752d?q=80&w=3154&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Community impact"
                     objectFit="cover"
                     w="full"

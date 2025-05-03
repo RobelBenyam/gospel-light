@@ -70,7 +70,7 @@ export default function Gallery() {
         category: 'Current Church',
       },
       {
-        src: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.unsplash.com/photo-1571069424149-c456e0b413d6?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Fellowship Hall',
         description: 'Where we gather for meals and community events.',
         category: 'Current Church',
@@ -84,7 +84,7 @@ export default function Gallery() {
         category: 'Progress',
       },
       {
-        src: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.unsplash.com/photo-1571069424149-c456e0b413d6?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Foundation Work',
         description: 'Laying the foundation for our future home.',
         category: 'Progress',
@@ -98,7 +98,7 @@ export default function Gallery() {
         category: 'Renderings',
       },
       {
-        src: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+        src: 'https://images.unsplash.com/photo-1571069424149-c456e0b413d6?q=80&w=2958&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         title: 'Worship Center',
         description: 'The heart of our new building.',
         category: 'Renderings',

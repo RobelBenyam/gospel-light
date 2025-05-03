@@ -98,7 +98,7 @@ export default function Events() {
       time: '2:00 PM - 5:00 PM',
       location: 'Current Church Building',
       description: 'Tour our current facilities and see the plans for our new building. Meet our leadership team and learn how you can be part of this exciting project.',
-      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      image: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       category: 'Community',
     },
     {
@@ -107,7 +107,7 @@ export default function Events() {
       time: '7:00 PM - 9:00 PM',
       location: 'Main Sanctuary',
       description: 'A special evening of prayer and worship dedicated to our building project. Come join us as we seek God\'s guidance and blessing for this important ministry.',
-      image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      image: 'https://images.unsplash.com/photo-1627676569762-ea59379ed3b3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       category: 'Worship',
     },
   ]
