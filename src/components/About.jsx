@@ -7,8 +7,31 @@ import {
   SimpleGrid,
   useColorModeValue,
   Avatar,
-  AvatarGroup,
+  Image,
+  Flex,
 } from '@chakra-ui/react'
+
+const Card = ({ children, ...props }) => {
+  return (
+    <Box
+      bg={useColorModeValue('white', 'gray.800')}
+      p={6}
+      rounded="xl"
+      shadow="md"
+      borderWidth="1px"
+      borderColor={useColorModeValue('gray.200', 'gray.700')}
+      _hover={{
+        transform: 'translateY(-5px)',
+        shadow: 'xl',
+        borderColor: 'blue.400',
+      }}
+      transition="all 0.3s ease"
+      {...props}
+    >
+      {children}
+    </Box>
+  )
+}
 
 export default function About() {
   return (
@@ -25,46 +48,48 @@ export default function About() {
               in our community. Over the years, we have grown from a small gathering to a
               vibrant congregation serving thousands of families.
             </Text>
+            <Box
+              w="full"
+              h="400px"
+              position="relative"
+              overflow="hidden"
+              rounded="xl"
+              mb={8}
+              shadow="lg"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1548625149-fc4a29cf7092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="Church building"
+                objectFit="cover"
+                w="full"
+                h="full"
+              />
+            </Box>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} mt={8}>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-              >
-                <Heading size="md" mb={4}>
+              <Card>
+                <Heading size="md" mb={4} color="blue.500">
                   1995
                 </Heading>
                 <Text color="gray.600">
                   Our church began with just 20 members meeting in a small rented space.
                 </Text>
-              </Box>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-              >
-                <Heading size="md" mb={4}>
+              </Card>
+              <Card>
+                <Heading size="md" mb={4} color="blue.500">
                   2005
                 </Heading>
                 <Text color="gray.600">
                   We moved to our current location and began expanding our ministries.
                 </Text>
-              </Box>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-              >
-                <Heading size="md" mb={4}>
+              </Card>
+              <Card>
+                <Heading size="md" mb={4} color="blue.500">
                   2024
                 </Heading>
                 <Text color="gray.600">
                   Launching our building fund campaign to better serve our growing community.
                 </Text>
-              </Box>
+              </Card>
             </SimpleGrid>
           </Stack>
 
@@ -79,38 +104,58 @@ export default function About() {
               and reflects God's love for our community.
             </Text>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} mt={8}>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-              >
-                <Heading size="md" mb={4}>
+              <Card>
+                <Box
+                  h="200px"
+                  mb={4}
+                  rounded="lg"
+                  overflow="hidden"
+                  shadow="md"
+                >
+                  <Image
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="New building rendering"
+                    objectFit="cover"
+                    w="full"
+                    h="full"
+                  />
+                </Box>
+                <Heading size="md" mb={6} color="blue.500">
                   New Building Features
                 </Heading>
-                <Stack spacing={3}>
-                  <Text color="gray.600">• Modern worship center with 500+ seating capacity</Text>
-                  <Text color="gray.600">• Dedicated children's and youth spaces</Text>
-                  <Text color="gray.600">• Community gathering areas</Text>
-                  <Text color="gray.600">• State-of-the-art audio and visual systems</Text>
+                <Stack spacing={4}>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Modern worship center with 500+ seating capacity</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Dedicated children's and youth spaces</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Community gathering areas</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">State-of-the-art audio and visual systems</Text>
                 </Stack>
-              </Box>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-              >
-                <Heading size="md" mb={4}>
+              </Card>
+              <Card>
+                <Box
+                  h="200px"
+                  mb={4}
+                  rounded="lg"
+                  overflow="hidden"
+                  shadow="md"
+                >
+                  <Image
+                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Community impact"
+                    objectFit="cover"
+                    w="full"
+                    h="full"
+                  />
+                </Box>
+                <Heading size="md" mb={6} color="blue.500">
                   Community Impact
                 </Heading>
-                <Stack spacing={3}>
-                  <Text color="gray.600">• Expanded food pantry and outreach programs</Text>
-                  <Text color="gray.600">• Community event spaces for local organizations</Text>
-                  <Text color="gray.600">• Counseling and support services</Text>
-                  <Text color="gray.600">• Educational programs and workshops</Text>
+                <Stack spacing={4}>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Expanded food pantry and outreach programs</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Community event spaces for local organizations</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Counseling and support services</Text>
+                  <Text color="gray.600" fontSize="md" fontWeight="medium">Educational programs and workshops</Text>
                 </Stack>
-              </Box>
+              </Card>
             </SimpleGrid>
           </Stack>
 
@@ -124,78 +169,63 @@ export default function About() {
               building project.
             </Text>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} mt={8}>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-                textAlign="center"
-              >
+              <Card textAlign="center">
                 <Avatar
                   size="xl"
                   name="John Smith"
                   bg="blue.500"
                   color="white"
                   mb={4}
+                  boxShadow="lg"
                 />
-                <Heading size="md" mb={2}>
+                <Heading size="md" mb={2} color="blue.500">
                   John Smith
                 </Heading>
-                <Text color="gray.500" mb={2}>
+                <Text color="gray.500" mb={2} fontWeight="medium">
                   Senior Pastor
                 </Text>
                 <Text color="gray.600">
                   Leading our church with vision and passion for over 15 years.
                 </Text>
-              </Box>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-                textAlign="center"
-              >
+              </Card>
+              <Card textAlign="center">
                 <Avatar
                   size="xl"
                   name="Sarah Johnson"
-                  bg="green.500"
+                  bg="blue.500"
                   color="white"
                   mb={4}
+                  boxShadow="lg"
                 />
-                <Heading size="md" mb={2}>
+                <Heading size="md" mb={2} color="blue.500">
                   Sarah Johnson
                 </Heading>
-                <Text color="gray.500" mb={2}>
+                <Text color="gray.500" mb={2} fontWeight="medium">
                   Building Committee Chair
                 </Text>
                 <Text color="gray.600">
                   Overseeing the construction and development of our new building.
                 </Text>
-              </Box>
-              <Box
-                bg={useColorModeValue('white', 'gray.800')}
-                p={6}
-                rounded="lg"
-                shadow="md"
-                textAlign="center"
-              >
+              </Card>
+              <Card textAlign="center">
                 <Avatar
                   size="xl"
                   name="Michael Brown"
-                  bg="purple.500"
+                  bg="blue.500"
                   color="white"
                   mb={4}
+                  boxShadow="lg"
                 />
-                <Heading size="md" mb={2}>
+                <Heading size="md" mb={2} color="blue.500">
                   Michael Brown
                 </Heading>
-                <Text color="gray.500" mb={2}>
+                <Text color="gray.500" mb={2} fontWeight="medium">
                   Finance Director
                 </Text>
                 <Text color="gray.600">
                   Managing the building fund and financial planning for the project.
                 </Text>
-              </Box>
+              </Card>
             </SimpleGrid>
           </Stack>
         </Stack>
